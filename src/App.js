@@ -1,6 +1,7 @@
 import Card from "./components/Card";
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
+import React from 'react'
 
 const arr = [
   {
@@ -41,7 +42,13 @@ function App() {
 
         <div className="d-flex">
           {arr.map((obj) => (
-            <Card title={obj.name} price={obj.price} imageUrl={obj.imageUrl} onClick={()=>11} />
+            <Card
+              title={obj.name}
+              price={obj.price}
+              imageUrl={obj.imageUrl}
+              onFavorite={() => console.log('Zakladki')}
+              onPlus={()=>console.log('Plus')}
+            />
           ))}
         </div>
       </div>
