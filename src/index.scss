@@ -25,6 +25,11 @@ header {
     margin-right: 15px;
   }
 
+  .CartCost{
+    position: relative;
+    top: -5px;
+  }
+
   h3,
   p {
     margin: 0;
@@ -116,6 +121,7 @@ header {
     margin: 0;
   }
 }
+
 
 .cartTotalBlock {
   ul {
